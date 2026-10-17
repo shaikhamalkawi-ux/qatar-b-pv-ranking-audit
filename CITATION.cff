@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Please cite this OEDI-only software archive using the metadata below. It is not a publication DOI for the associated manuscript."
+type: software
+title: "Qatar B PV Ranking Audit: Public OEDI-Only Reproduction"
+authors:
+  - family-names: "Malkawi"
+    given-names: "Ghassan"
+    affiliation: "Higher Colleges of Technology, Al Ain, United Arab Emirates"
+version: "R6-reviewer-1"
+date-released: 2026-10-18
+url: "https://github.com/shaikhamalkawi-ux/qatar-b-pv-ranking-audit"
+repository-code: "https://github.com/shaikhamalkawi-ux/qatar-b-pv-ranking-audit"
+abstract: >-
+  Conditional reproduction of retrospective photovoltaic ranking-policy baseline
+  and shadow-alert comparisons from archived OEDI PVDAQ System 2107 daily
+  quantities. Restricted Qatar data and the manuscript are not included.
+keywords:
+  - photovoltaics
+  - PVDAQ
+  - ranking regret
+  - reproducibility

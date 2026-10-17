@@ -1,5 +1,10 @@
 # Qatar B — PV ranking audit: public OEDI-only reproduction
 
+**Author and maintainer:** Ghassan Malkawi  
+**Affiliation:** Higher Colleges of Technology, Al Ain, United Arab Emirates.
+
+**Reviewer access:** This is a public repository. The OEDI-only code and derived daily inputs can be inspected or downloaded without collaborator invitations. Use the commands below to reproduce the documented decision-endpoint checks.
+
 **Scope:** Public NREL/Open Energy Data Initiative (OEDI) PVDAQ System 2107 operational-channel replay. This repository **does not** contain the restricted Qatar field data, confidential PV module/vendor/channel crosswalks, Qatar analysis binaries, emails, the manuscript under author approval, or the owner's restricted release archive.
 
 **Study:** *Prediction Accuracy Can Improve While PV Candidate Ranking Degrades: Physical Materiality, Revalidation, and External Field Transport* (Energy Reports R6 author-review manuscript). Public status of this repository **does not** mean author or Qatar data-owner approval of the unpublished paper.
@@ -45,4 +50,4 @@ Correspondence/permission requests for the private Qatar branch must go to the o
 
 ## Relationship to the manuscript
 
-The paper's public-code reference may cite **this repository only after its actual GitHub URL is verified**. This repository supports the OEDI external component, **not** the confidential Qatar calculations. Do not describe the study as fully open-data reproducible.
+The manuscript links to the public repository at https://github.com/shaikhamalkawi-ux/qatar-b-pv-ranking-audit in its Data availability and reproducibility section. Repository citation metadata identify **Ghassan Malkawi** as the sole software author; upstream data attribution is retained separately. This repository supports the OEDI external component, **not** the confidential Qatar calculations. Do not describe the study as fully open-data reproducible.

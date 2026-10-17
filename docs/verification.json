@@ -32,6 +32,9 @@
   "shadow_results": "two frozen tables passed",
   "independent_shadow_validation": "PASS",
   "publisher_version": "Qatar B R6 Energy Reports author-review",
-  "github": "NOT_PUBLISHED: cannot create a new repository with currently available GitHub tool actions",
-  "paper_repository_url": "HOLD until public GitHub repository exists and is verified"
+  "github": "PUBLIC: visibility verified through the GitHub repository API on 2026-10-18",
+  "paper_repository_url": "https://github.com/shaikhamalkawi-ux/qatar-b-pv-ranking-audit",
+  "software_author": "Ghassan Malkawi",
+  "metadata_update": "README, citation/author metadata, inventory and checksums only; analysis code, input and result payloads unchanged.",
+  "verification_scope": "Prior clean-run record retained; current local source tree matched the public GitHub commit tree before metadata-only changes. A no-login browser download was not independently tested in this environment."
 }
