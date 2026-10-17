@@ -1,0 +1,80 @@
+{
+  "random_subset_enumeration": "PASS",
+  "year_cohort_assertions": [
+    {
+      "cohort": "PRIMARY18",
+      "year": 2021,
+      "n_dates": 138,
+      "point_leader_replay": "PASS",
+      "set_membership_replay": "PASS",
+      "physical_replay": "PASS",
+      "value_replay": "PASS",
+      "n_candidates": 18,
+      "zero_ties": true,
+      "calibration_only": true
+    },
+    {
+      "cohort": "PRIMARY18",
+      "year": 2022,
+      "n_dates": 135,
+      "point_leader_replay": "PASS",
+      "set_membership_replay": "PASS",
+      "physical_replay": "PASS",
+      "value_replay": "PASS",
+      "n_candidates": 18,
+      "zero_ties": true,
+      "calibration_only": true
+    },
+    {
+      "cohort": "PRIMARY18",
+      "year": 2023,
+      "n_dates": 151,
+      "point_leader_replay": "PASS",
+      "set_membership_replay": "PASS",
+      "physical_replay": "PASS",
+      "value_replay": "PASS",
+      "n_candidates": 18,
+      "zero_ties": true,
+      "calibration_only": true
+    },
+    {
+      "cohort": "SECONDARY23",
+      "year": 2021,
+      "n_dates": 104,
+      "point_leader_replay": "PASS",
+      "set_membership_replay": "PASS",
+      "physical_replay": "PASS",
+      "value_replay": "PASS",
+      "n_candidates": 23,
+      "zero_ties": true,
+      "calibration_only": true
+    },
+    {
+      "cohort": "SECONDARY23",
+      "year": 2022,
+      "n_dates": 124,
+      "point_leader_replay": "PASS",
+      "set_membership_replay": "PASS",
+      "physical_replay": "PASS",
+      "value_replay": "PASS",
+      "n_candidates": 23,
+      "zero_ties": true,
+      "calibration_only": true
+    },
+    {
+      "cohort": "SECONDARY23",
+      "year": 2023,
+      "n_dates": 144,
+      "point_leader_replay": "PASS",
+      "set_membership_replay": "PASS",
+      "physical_replay": "PASS",
+      "value_replay": "PASS",
+      "n_candidates": 23,
+      "zero_ties": true,
+      "calibration_only": true
+    }
+  ],
+  "result": "PASS",
+  "n_daily_rows": 796,
+  "note": "Exploratory post-outcome baseline analysis, original R5 results untouched"
+}
