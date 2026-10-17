@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "scope": "OEDI-only public-source derived inputs; no Qatar data, private source, correspondence or crosswalk",
+  "clean_checkout": "PASS",
+  "commands": [
+    {
+      "command": "baseline/scripts/reproduce_baselines.py --input-dir baseline/inputs --output-dir baseline/results",
+      "return_code": 0,
+      "stdout_tail": " 7.57850        14.52370         7.57850        14.70411          7.45773         15.00604\nSECONDARY23  2023      set_regret_minus_size_matched_random_pp  -0.13011      144 ordered retained date circular moving block                    7 20261017 5000        -0.25540        -0.03967        -0.27168        -0.03726         -0.30083         -0.03569\n",
+      "stderr_tail": ""
+    },
+    {
+      "command": "shadow/scripts/run_challenge.py --root shadow",
+      "return_code": 0,
+      "stdout_tail": "   1                   1                     0       0.840336  100.000000\n 2023  FRESH S2_MARGIN_OR_FULLSET           119                    1                   1                     0       0.840336  100.000000\n 2023  FRESH  S3_7RETAINED_LAGGED             0                    1                   0                     1            NaN    0.000000\n",
+      "stderr_tail": ""
+    },
+    {
+      "command": "shadow/scripts/independent_verify.py",
+      "return_code": 0,
+      "stdout_tail": "INDEPENDENT VERIFY PASS: 748 daily records, 6 mode-year streams, 3 thresholds, 3 main policies, no observed outcome in pre-outcome table\n",
+      "stderr_tail": ""
+    },
+    {
+      "command": "verify_public_release.py",
+      "return_code": 0,
+      "stdout_tail": "PUBLIC OEDI-ONLY AUDIT PASS: 5 frozen comparator tables, no restricted Qatar payload\n",
+      "stderr_tail": ""
+    }
+  ],
+  "baseline_results": "three frozen comparator tables passed",
+  "shadow_results": "two frozen tables passed",
+  "independent_shadow_validation": "PASS",
+  "publisher_version": "Qatar B R6 Energy Reports author-review",
+  "github": "NOT_PUBLISHED: cannot create a new repository with currently available GitHub tool actions",
+  "paper_repository_url": "HOLD until public GitHub repository exists and is verified"
+}

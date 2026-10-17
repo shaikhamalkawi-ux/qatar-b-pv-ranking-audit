@@ -1,0 +1,25 @@
+{
+  "project": "Project 10 \u2014 Qatar B R5",
+  "status": "EXPLORATORY \u2014 POST-OUTCOME, NOT PREREGISTERED",
+  "source": "Nested PVDAQ2107_EXTERNAL_REPLAY_R1_RESULTS.zip from B_R5_Reproducibility_RESTRICTED.zip",
+  "unit": "one retained evaluation date; no mixing of distinct primary and secondary cohorts",
+  "static_point_model": "Frozen R5 Branch B predicted argmax pB",
+  "uniform_random_point": "Exact per-date expectation of uniformly drawing 1 of 18 (primary) or 23 (secondary) candidates; no simulation",
+  "historical_best_2020": "Single fixed candidate with largest 2020 calibration-date mean normalized daily response y; ties resolved by order of fixed input columns",
+  "historical_best_2018_19": "Development-only mean daily response selected from 2018\u20132019; descriptive sensitivity",
+  "matched_random_set": "Exact uniform subset of size equal to each date's frozen R5 set; expected top1 coverage k/N, expected best-member regret using hypergeometric order-statistics",
+  "regret_pct": "100*(max_i y_i - y_selected)/max_i y_i",
+  "physical": "max_i E_i - E_selected in admitted-window AC kWh/kWac, with E_i=n_samples/12 * y_i",
+  "uncertainty": "Paired circular moving-block date bootstrap with 5000 resamples for block sizes 5, 7 and 14 retained dates, stratified by year and cohort. This uncertainty does not include random-action selection variance.",
+  "seed": 20261017,
+  "n_bootstrap": 5000,
+  "primary_block_length_retained_dates": 7,
+  "caveats": [
+    "No causal claim",
+    "No comparison to Qatar DC values",
+    "OEDI 23-channel secondary cohort has unequal source-record module quantities",
+    "2020-calibration comparator uses the same 2020 observed labels available to the frozen calibration procedure",
+    "The exercise was proposed after inspecting primary outcomes; results are exploratory not independent confirmation",
+    "A constant leader may be operationally inadmissible as a real dispatch/switch policy absent system-level technical constraints"
+  ]
+}
