@@ -1,0 +1,31 @@
+name: Public OEDI reproducibility checks
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-oedi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Install requirements
+        run: python -m pip install -r requirements.txt
+      - name: Baseline replay
+        run: python baseline/scripts/reproduce_baselines.py --input-dir baseline/inputs --output-dir baseline/results
+      - name: Shadow replay
+        run: python shadow/scripts/run_challenge.py --root shadow
+      - name: Independent shadow audit
+        run: python shadow/scripts/independent_verify.py
+      - name: Selection depth and monthly references
+        run: python extensions/selection_depth_monthly_reference/reproduce.py
+      - name: 360-window omission replay
+        run: python extensions/calibration_support_360/reproduce.py --write-results
+      - name: Public-only safety and frozen comparison audit
+        run: python verify_public_release.py
