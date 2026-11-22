@@ -5,3 +5,6 @@ baseline/results/
 shadow/results/
 *.log
 .env
+
+# Generated results from public OEDI extensions
+extensions/calibration_support_360/results/
